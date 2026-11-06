@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POLYVERSE | Learning Universe</title>
+<meta name="theme-color" content="#080b18">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+ background:#080b18;
+ color:#fff;
+ font-family:Arial,sans-serif;
+ min-height:100vh;
+ overflow-x:hidden;
+}
+header{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:20px 6%;
+ border-bottom:1px solid #252044;
+}
+.logo{
+ font-size:23px;
+ font-weight:900;
+ letter-spacing:2px;
+ color:#b69aff;
+}
+.logo span{color:#fff}
+.menu{color:#aaa;font-size:13px}
+.hero{
+ max-width:1100px;
+ margin:auto;
+ padding:75px 7% 55px;
+ text-align:center;
+}
+.tag{
+ display:inline-block;
+ padding:9px 16px;
+ border:1px solid #6245a5;
+ border-radius:30px;
+ color:#c9b5ff;
+ font-size:11px;
+ letter-spacing:2px;
+}
+h1{
+ font-size:clamp(45px,10vw,82px);
+ margin:25px 0 15px;
+ letter-spacing:3px;
+ background:linear-gradient(90deg,#fff,#a78bfa,#54d6ff);
+ -webkit-background-clip:text;
+ color:transparent;
+}
+.hero p{
+ color:#a4a3b5;
+ line-height:1.7;
+ max-width:520px;
+ margin:auto;
+ font-size:15px;
+}
+.start{
+ margin-top:30px;
+ padding:15px 27px;
+ border:0;
+ border-radius:10px;
+ background:linear-gradient(100deg,#7650df,#3d9ee9);
+ color:white;
+ font-size:15px;
+ font-weight:bold;
+ cursor:pointer;
+}
+.section{
+ max-width:1050px;
+ margin:20px auto;
+ padding:25px 6%;
+}
+.section h2{font-size:23px;margin-bottom:8px}
+.sub{color:#89899f;font-size:13px;margin-bottom:22px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:15px;
+}
+.card{
+ background:linear-gradient(145deg,#17152d,#101729);
+ border:1px solid #302650;
+ border-radius:17px;
+ padding:23px;
+ min-height:150px;
+}
+.card .symbol{font-size:30px;margin-bottom:15px}
+.card h3{font-size:17px;margin-bottom:9px}
+.card p{font-size:12px;color:#9695aa;line-height:1.6}
+footer{
+ text-align:center;
+ color:#65647a;
+ padding:35px 15px;
+ font-size:12px;
+}
+</style>
+</head>
+
+<body>
+<header>
+ <div class="logo">POLY<span>VERSE</span></div>
+ <div class="menu">FIRST YEAR EDITION</div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="tag">THE FUTURE OF POLYTECHNIC LEARNING</div>
+ <h1>POLYVERSE</h1>
+ <p>Explore knowledge. Complete missions. Master your subjects. Welcome to your own learning universe.</p>
+ <button class="start" onclick="document.getElementById('universe').scrollIntoView({behavior:'smooth'})">
+ EXPLORE UNIVERSE →
+ </button>
+</section>
+
+<section class="section" id="universe">
+ <h2>Your Learning Universe</h2>
+ <p class="sub">Choose your semester and begin your journey.</p>
+
+ <div class="grid">
+  <div class="card">
+   <div class="symbol">🪐</div>
+   <h3>Semester 01</h3>
+   <p>Mathematics-I, Applied Physics-I and more.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🌌</div>
+   <h3>Semester 02</h3>
+   <p>Explore the next level of Polytechnic learning.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🎯</div>
+   <h3>Mission Center</h3>
+   <p>Interactive missions, challenges and quizzes.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🏆</div>
+   <h3>Achievements</h3>
+   <p>Your learning progress and achievements.</p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>POLYVERSE © 2026 · LEARN BEYOND LIMITS</footer>
+</body>
+  </html>
